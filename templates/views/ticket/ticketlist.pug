@@ -1,0 +1,7 @@
+extends ../../layouts/default
+
+block content
+    .container: .jumbotron
+        ul
+            each val in data.tickets
+                li= val.title + val.status + val.autokey
